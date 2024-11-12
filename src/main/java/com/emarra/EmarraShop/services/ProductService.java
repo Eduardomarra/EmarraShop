@@ -5,9 +5,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.emarra.EmarraShop.entities.Product;
+import com.emarra.EmarraShop.entities.Produto;
 import com.emarra.EmarraShop.repositories.ProductRepository;
-import com.emarra.EmarraShop.to.ProductTO;
+import com.emarra.EmarraShop.to.ProdutoTO;
 
 @Service
 public class ProductService {
@@ -15,10 +15,10 @@ public class ProductService {
 	@Autowired
 	private ProductRepository productRepository;
 	
-	public Page<ProductTO> getAll(Pageable pageable) {
-		Page<Product> product = productRepository.findAll(pageable);
+	public Page<ProdutoTO> getAll(Pageable pageable) {
+		Page<Produto> product = productRepository.findAll(pageable);
 		
-		return product.map(ProductTO::new);
+		return product.map(ProdutoTO::new);
 	}
 
 }

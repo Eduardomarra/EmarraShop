@@ -1,17 +1,17 @@
 package com.emarra.EmarraShop.to;
 
-import com.emarra.EmarraShop.entities.Product;
+import com.emarra.EmarraShop.entities.Produto;
 
-public class ProductTO {
+public class ProdutoTO {
 	
 	private Long id;
 	private String name;
 	private Double price;
 	private Integer qtd_estoque;
 	
-	public ProductTO() {}
+	public ProdutoTO() {}
 
-	public ProductTO(Long id, String name, Double price, Integer qtd_estoque) {
+	public ProdutoTO(Long id, String name, Double price, Integer qtd_estoque) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -19,7 +19,7 @@ public class ProductTO {
 		this.qtd_estoque = qtd_estoque;
 	}
 	
-	public ProductTO(Product product) {
+	public ProdutoTO(Produto product) {
 		id = product.getId();
 		name = product.getName();
 		price = product.getPrice();

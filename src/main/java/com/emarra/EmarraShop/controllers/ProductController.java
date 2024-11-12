@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.emarra.EmarraShop.services.ProductService;
-import com.emarra.EmarraShop.to.ProductTO;
+import com.emarra.EmarraShop.to.ProdutoTO;
 
 @RestController
 @RequestMapping("/product")
@@ -20,8 +20,8 @@ public class ProductController {
 	
 	
 	@GetMapping
-	public ResponseEntity<Page<ProductTO>> getAll(Pageable pageable){
-		Page<ProductTO> product = productService.getAll(pageable);
+	public ResponseEntity<Page<ProdutoTO>> getAll(Pageable pageable){
+		Page<ProdutoTO> product = productService.getAll(pageable);
 		return ResponseEntity.ok(product);
 		
 	}
