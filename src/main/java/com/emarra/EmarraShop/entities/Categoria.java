@@ -16,7 +16,7 @@ public class Categoria {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String name;
+	private String nome;
 	
 	@ManyToMany(mappedBy = "categorias")
 	private List<Produto> produto;
@@ -24,9 +24,9 @@ public class Categoria {
 	public Categoria() {
 	}
 	
-	public Categoria(Long id, String name) {
+	public Categoria(Long id, String nome) {
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 	}
 
 	public Long getId() {
@@ -37,19 +37,19 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		return result;
 	}
 
@@ -62,10 +62,10 @@ public class Categoria {
 		if (getClass() != obj.getClass())
 			return false;
 		Categoria other = (Categoria) obj;
-		if (name == null) {
-			if (other.name != null)
+		if (nome == null) {
+			if (other.nome != null)
 				return false;
-		} else if (!name.equals(other.name))
+		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
 	}

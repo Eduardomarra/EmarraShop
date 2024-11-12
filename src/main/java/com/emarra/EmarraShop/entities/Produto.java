@@ -20,8 +20,8 @@ public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String name;
-	private Double price;
+	private String nome;
+	private Double preco;
 	private Integer qtd_estoque;
 	
 	@ManyToMany
@@ -48,11 +48,11 @@ public class Produto {
 		
 	}
 
-	public Produto(Long id, String name, Double price, Integer qtd_estoque) {
+	public Produto(Long id, String nome, Double preco, Integer qtd_estoque) {
 		super();
 		this.id = id;
-		this.name = name;
-		this.price = price;
+		this.nome = nome;
+		this.preco = preco;
 		this.qtd_estoque = qtd_estoque;
 	}
 
@@ -64,20 +64,20 @@ public class Produto {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome (String nome) {
+		this.nome = nome;
 	}
 
-	public Double getPrice() {
-		return price;
+	public Double getPreco() {
+		return preco;
 	}
 
-	public void setPrice(Double price) {
-		this.price = price;
+	public void setPreco(Double preco) {
+		this.preco = preco;
 	}
 
 	public Integer getQtd_estoque() {

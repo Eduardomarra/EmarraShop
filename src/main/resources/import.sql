@@ -1,49 +1,116 @@
-<<<<<<< HEAD
--- Inserção de produtos de informática
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Dell Inspiron 15', 3999.99, 25);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Apple MacBook Pro 14', 14999.99, 10);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Lenovo ThinkPad X1 Carbon', 8999.00, 15);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('HP Pavilion 15', 2499.00, 30);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Samsung Galaxy Book Pro 360', 6499.00, 12);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Acer Aspire 5', 2599.99, 40);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Razer Blade 15', 14999.00, 5);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Microsoft Surface Laptop 4', 8599.00, 20);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Logitech MX Master 3', 399.99, 150);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Corsair K95 RGB Platinum', 899.99, 60);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Samsung 970 EVO Plus 1TB', 799.00, 120);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Kingston HyperX Predator 16GB DDR4', 799.00, 80);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('NVIDIA GeForce RTX 3080', 7999.99, 10);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Intel Core i7-13700K', 3299.00, 50);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('AMD Ryzen 9 7900X', 3999.00, 40);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Asus ROG Strix Z790-E Gaming WiFi', 2899.00, 35);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Seagate Barracuda 2TB HDD', 449.00, 100);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Western Digital WD Blue 500GB SSD', 379.00, 200);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('BenQ Zowie XL2411P 24" Monitor', 1699.00, 45);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Acer Predator X34P 34" Curved Monitor', 4899.00, 30);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Logitech G Pro X Superlight Mouse', 699.00, 180);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Corsair Vengeance LPX 32GB DDR4', 899.00, 70);
-=======
--- Inserção de produtos de informática
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Dell Inspiron 15', 3999.99, 25);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Apple MacBook Pro 14', 14999.99, 10);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Lenovo ThinkPad X1 Carbon', 8999.00, 15);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('HP Pavilion 15', 2499.00, 30);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Samsung Galaxy Book Pro 360', 6499.00, 12);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Acer Aspire 5', 2599.99, 40);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Razer Blade 15', 14999.00, 5);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Microsoft Surface Laptop 4', 8599.00, 20);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Logitech MX Master 3', 399.99, 150);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Corsair K95 RGB Platinum', 899.99, 60);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Samsung 970 EVO Plus 1TB', 799.00, 120);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Kingston HyperX Predator 16GB DDR4', 799.00, 80);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('NVIDIA GeForce RTX 3080', 7999.99, 10);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Intel Core i7-13700K', 3299.00, 50);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('AMD Ryzen 9 7900X', 3999.00, 40);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Asus ROG Strix Z790-E Gaming WiFi', 2899.00, 35);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Seagate Barracuda 2TB HDD', 449.00, 100);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Western Digital WD Blue 500GB SSD', 379.00, 200);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('BenQ Zowie XL2411P 24" Monitor', 1699.00, 45);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Acer Predator X34P 34" Curved Monitor', 4899.00, 30);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Logitech G Pro X Superlight Mouse', 699.00, 180);
-INSERT INTO produto (name, price, qtd_estoque) VALUES ('Corsair Vengeance LPX 32GB DDR4', 899.00, 70);
->>>>>>> f35e53bbdec6ec07349a0473cef166066389cbdb
+INSERT INTO Categoria (nome) VALUES('Eletrônicos');
+INSERT INTO Categoria (nome) VALUES('Roupas');
+INSERT INTO Categoria (nome) VALUES('Alimentos');
+INSERT INTO Categoria (nome) VALUES('Livros');
+INSERT INTO Categoria (nome) VALUES('Ferramentas');
+INSERT INTO Categoria (nome) VALUES('Móveis');
+INSERT INTO Categoria (nome) VALUES('Cosméticos');
+INSERT INTO Categoria (nome) VALUES('Brinquedos');
+INSERT INTO Categoria (nome) VALUES('Automotivos');
+INSERT INTO Categoria (nome) VALUES('Esportes');
+
+INSERT INTO Cliente (email, nome, telefone) VALUES('joao@example.com', 'João Silva', '123456789');
+INSERT INTO Cliente (email, nome, telefone) VALUES('maria@example.com', 'Maria Oliveira', '987654321');
+INSERT INTO Cliente (email, nome, telefone) VALUES('carlos@example.com', 'Carlos Souza', '123123123');
+INSERT INTO Cliente (email, nome, telefone) VALUES('ana@example.com', 'Ana Lima', '456456456');
+INSERT INTO Cliente (email, nome, telefone) VALUES('paula@example.com', 'Paula Costa', '789789789');
+INSERT INTO Cliente (email, nome, telefone) VALUES('rafael@example.com', 'Rafael Mendes', '111222333');
+INSERT INTO Cliente (email, nome, telefone) VALUES('fernanda@example.com', 'Fernanda Rocha', '444555666');
+INSERT INTO Cliente (email, nome, telefone) VALUES('luis@example.com', 'Luis Alberto', '777888999');
+INSERT INTO Cliente (email, nome, telefone) VALUES('beatriz@example.com', 'Beatriz Santos', '222333444');
+INSERT INTO Cliente (email, nome, telefone) VALUES('renato@example.com', 'Renato Pereira', '555666777');
+INSERT INTO Cliente (email, nome, telefone) VALUES('juliana@example.com', 'Juliana Martins', '888999000');
+INSERT INTO Cliente (email, nome, telefone) VALUES('pedro@example.com', 'Pedro Ferreira', '333444555');
+INSERT INTO Cliente (email, nome, telefone) VALUES('eliane@example.com', 'Eliane Gomes', '666777888');
+INSERT INTO Cliente (email, nome, telefone) VALUES('marcos@example.com', 'Marcos Alves', '999000111');
+INSERT INTO Cliente (email, nome, telefone) VALUES('viviane@example.com', 'Viviane Carvalho', '555444333');
+
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('12345678000195', 'TechStore Ltda', '8005551234');
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('23456789000198', 'ModaFashion', '8005555678');
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('34567890000199', 'Alimentos Frescos', '8005559999');
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('45678901000190', 'Livros&Co', '8005560000');
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('56789012000191', 'Ferramentas Pro', '8005571111');
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('67890123000192', 'Móveis da Casa', '8005582222');
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('78901234000193', 'Cosméticos Bella', '8005593333');
+INSERT INTO Fornecedor (cnpj, nome, telefone) VALUES('89012345000194', 'Brinquedos Mania', '8005504444');
+
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Smartphone', 					1500, 100, 1);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Laptop', 						3500, 50, 1);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Fones de ouvido', 			200, 150, 1);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Câmera Digital', 				1000, 30, 1);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('TV 4K', 						2500, 20, 1);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Camiseta', 					50, 200, 2);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Calça Jeans', 				120, 150, 2);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Jaqueta de Couro',			300, 80, 2);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Tênis', 						150, 120, 2);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Arroz', 						30, 300, 3);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Feijão', 						20, 250, 3);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Açúcar', 						10, 400, 3);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Macarrão', 					5, 500, 3);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Livro A', 					40, 200, 4);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Livro B', 					30, 150, 4);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Livro C', 					60, 100, 4);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Martelo', 					25, 150, 5);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Chave Inglesa', 				50, 100, 5);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Alicate', 					30, 200, 5);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Sofá', 						800, 50, 6);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Mesa de Jantar', 				600, 60, 6);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Cadeira', 					100, 150, 6);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Perfume', 					120, 200, 7);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Shampoo', 					25, 300, 7);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Creme Hidratante', 			35, 250, 7);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Carrinho de Controle Remoto', 150, 100, 8);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Boneca', 80, 200, 8);
+INSERT INTO Produto (nome, preco, qtd_estoque, fornecedor_id) VALUES('Jogo de Tabuleiro', 60, 150, 8);
+
+INSERT INTO Vendedor (matricula, nome) VALUES(153123, 'Carlos Pereira');
+INSERT INTO Vendedor (matricula, nome) VALUES(253215, 'Ana Souza');
+INSERT INTO Vendedor (matricula, nome) VALUES(335123, 'Fernanda Lima');
+INSERT INTO Vendedor (matricula, nome) VALUES(445358, 'Ricardo Alves');
+INSERT INTO Vendedor (matricula, nome) VALUES(582385, 'Juliana Costa');
+
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-01', 1, 1600.00, 1, 1);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-02', 2, 2500.00, 2, 2);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-03', 3, 3000.00, 3, 3);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-04', 3, 1000.00, 4, 4);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-05', 2, 2200.00, 5, 5);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-06', 1, 1800.00, 6, 1);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-07', 3, 1200.00, 7, 2);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-08', 2, 900.00, 8, 3);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-09', 3, 2700.00, 9, 4);
+INSERT INTO Venda (data_venda, pagamento, valor_total, cliente_id, vendedor_id) VALUES('2024-10-10', 4, 1500.00, 10, 5);
+
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(1, 1);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(2, 1);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(3, 1);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(4, 1);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(5, 1);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(6, 2);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(7, 2);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(8, 2);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(9, 2);
+INSERT INTO Produto_Categoria (produto_id, categoria_id) VALUES(10, 3);
+
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(1, 1);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(2, 1);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(3, 1);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(4, 2);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(5, 2);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(6, 3);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(7, 3);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(8, 3);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(9, 4);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(10, 4);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(1, 5);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(2, 5);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(3, 5);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(6, 6);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(7, 6);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(8, 6);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(9, 7);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(10, 7);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(1, 8);
+INSERT INTO VENDA_HAS_PRODUTO (produto_id, venda_id) VALUES(2, 8);
+
+
+

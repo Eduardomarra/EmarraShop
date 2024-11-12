@@ -21,8 +21,8 @@ public class ProdutoTO {
 	
 	public ProdutoTO(Produto product) {
 		id = product.getId();
-		name = product.getName();
-		price = product.getPrice();
+		name = product.getNome();
+		price = product.getPreco();
 		qtd_estoque = product.getQtd_estoque();
 	}
 
